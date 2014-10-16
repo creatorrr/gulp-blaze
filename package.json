@@ -2,8 +2,13 @@
   "name": "gulp-blaze",
   "version": "0.0.0",
   "description": "Blaze compiler simplifies building security rules for Firebase.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "compile": "./node_modules/traceur/traceur --modules commonjs --dir src .",
+    "prepublish": "npm run compile",
     "test": "mocha"
   },
   "repository": {
@@ -30,9 +35,11 @@
   "dependencies": {
     "blaze_compiler": "git://github.com/creatorrr/blaze_compiler.git",
     "gulp-util": "^3.0.1",
-    "through2": "^0.6.3"
+    "through2": "^0.6.3",
+    "traceur-runtime": "0.0.59"
   },
   "devDependencies": {
-    "mocha": "^1.21.5"
+    "mocha": "^1.21.5",
+    "traceur": "0.0.72"
   }
 }
