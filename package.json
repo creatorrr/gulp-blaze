@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "compile": "./node_modules/traceur/traceur --modules commonjs --dir src .",
+    "compile": "./node_modules/traceur/traceur --block-binding parse --modules commonjs --dir src dist",
     "prepublish": "npm run compile",
     "test": "mocha"
   },
@@ -36,7 +36,8 @@
     "blaze_compiler": "git://github.com/creatorrr/blaze_compiler.git",
     "gulp-util": "^3.0.1",
     "through2": "^0.6.3",
-    "traceur-runtime": "0.0.59"
+    "traceur-runtime": "0.0.59",
+    "underscore": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "^1.21.5",
