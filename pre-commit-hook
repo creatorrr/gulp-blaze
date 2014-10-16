@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Thie pre-commit git hook builds source and makes sure they compile before committing it.
+
+# In order to speed things up, only perform this check when source files have changed.
+if git status -s | grep '^ M.\+js$'
+then
+
+  # Run compile script and get return value.
+  npm run compile
+  RETVAL=$?
+
+  # If return value isn't normal, something went wrong
+  # Abort commit
+  if [ $RETVAL -ne 0 ]
+  then
+    exit 1
+  fi
+fi
+
+# Exit normally and proceed with the commit.
+exit 0
+
