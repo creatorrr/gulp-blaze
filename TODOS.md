@@ -1,6 +1,6 @@
 # TODOS
 
-- [ ] Write README
+- [x] Write README
 - [x] Write package.json
 - [x] Install deps
 - [ ] Use original blaze_compiler instead of fork
