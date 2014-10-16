@@ -1,0 +1,38 @@
+{
+  "name": "gulp-blaze",
+  "version": "0.0.0",
+  "description": "Blaze compiler simplifies building security rules for Firebase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creatorrr/gulp-blaze"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "gulpplugin",
+    "schema",
+    "firebase",
+    "blaze_compiler",
+    "blaze",
+    "compiler"
+  ],
+  "author": "diwank.singh@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creatorrr/gulp-blaze/issues"
+  },
+  "homepage": "https://github.com/creatorrr/gulp-blaze",
+  "dependencies": {
+    "blaze_compiler": "git://github.com/creatorrr/blaze_compiler.git",
+    "gulp-util": "^3.0.1",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  }
+}
