@@ -1,6 +1,6 @@
 {
   "name": "gulp-blaze",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Blaze compiler simplifies building security rules for Firebase.",
   "main": "dist/index.js",
   "files": [
