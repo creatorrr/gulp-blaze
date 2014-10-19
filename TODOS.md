@@ -6,4 +6,4 @@
 - [ ] Use original blaze_compiler instead of fork
 - [x] Write git hook for automating and checking build process
 - [x] Write tests
-- [ ] Publish
+- [x] Publish

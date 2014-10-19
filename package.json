@@ -9,7 +9,7 @@
   "scripts": {
     "compile": "./node_modules/traceur/traceur --block-binding parse --modules commonjs --dir src dist",
     "prepublish": "npm run compile",
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha --harmony dist/test.js"
   },
   "repository": {
     "type": "git",
