@@ -7,7 +7,7 @@ if git status -s | grep '^ M.\+js$'
 then
 
   # Run compile script and get return value.
-  npm run compile
+  npm run compile && npm test
   RETVAL=$?
 
   # If return value isn't normal, something went wrong
