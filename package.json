@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "compile": "./node_modules/traceur/traceur --block-binding parse --modules commonjs --dir src dist",
+    "compile": "./node_modules/traceur/traceur --modules commonjs --dir src dist",
     "prepublish": "npm run compile",
     "test": "./node_modules/.bin/mocha --harmony dist/test.js"
   },
