@@ -8,7 +8,7 @@ import blaze from "blaze_compiler";
 const
   PLUGIN_NAME = "gulp-blaze";
 
-export default function gulpBlaze (options={debug: false}) {
+module.exports = function gulpBlaze (options={debug: false}) {
   let
     {debug} = options,
     error = (msg="", opts={}) => new gutil.PluginError(PLUGIN_NAME, msg, opts);
